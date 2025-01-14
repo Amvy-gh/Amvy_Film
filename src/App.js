@@ -1,6 +1,7 @@
 import './App.css';
 import MyNavbar from './components/Navbar.js';
 import Intro from './components/Intro.js';
+import Trending from './components/Trending.js';
 import "./style/landingpage.css";
 
 function App() {
@@ -12,6 +13,9 @@ function App() {
           <Intro />
         </div>  
       {/* {End of Intro} */}
+      <div className="trending">
+        <Trending/>
+      </div>
     </div>
   );
 }
