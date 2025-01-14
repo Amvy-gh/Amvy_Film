@@ -19,8 +19,18 @@
     letter-spacing: 4px;
 }
 
-.trendng{
-    height: 100vh;
-    background: url(../assets/images/BG/BackGround_1.png);
+.trending{
+    height: auto;
+    background: url(../assets/images/BG/BackGround_2.png);
     background-size: cover;
+}
+
+.movieWraper{
+}
+
+.movieImage{
+    height : auto;
+    background-color: black;
+    margin : 2px;
+    padding : 2px;
 }
