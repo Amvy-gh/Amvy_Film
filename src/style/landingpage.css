@@ -25,6 +25,12 @@
     background-size: cover;
 }
 
+.Superhero{
+    height: auto;
+    background: url(../assets/images/BG/BackGround_3.png);
+    background-size: cover;
+}
+
 .movieWraper{
 }
 
@@ -33,4 +39,8 @@
     background-color: black;
     margin : 2px;
     padding : 2px;
+}
+
+.Images{
+    height: 500px;
 }
