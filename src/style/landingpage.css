@@ -174,20 +174,18 @@ body {
 }
 
 .play-button {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: var(--primary-color);
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+    width: 70px;
+    height: 70px;
+    font-size: 1.8rem;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(229, 9, 20, 0.4);
 }
 
 .play-button:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
+    box-shadow: 0px 6px 15px rgba(229, 9, 20, 0.6);
 }
+
 
 .card-content {
     padding: 1.5rem;
