@@ -1,46 +1,206 @@
-.myBG {
+/* landingpage.css */
+:root {
+    --primary-color: #e50914;
+    --secondary-color: #141414;
+    --text-color: #ffffff;
+    --overlay-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .app-container {
+    background-color: var(--secondary-color);
+  }
+  
+  /* Hero Section */
+  .hero-section {
     height: 100vh;
-    background: url(../assets/images/BG/BackGround_1.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+                url(../assets/images/BG/BackGround_1.png);
     background-size: cover;
-}
-
-.intro{
-    height: 300px;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  /* Navbar Styles */
+  .custom-navbar {
+    transition: all 0.3s ease;
+    padding: 1rem 0;
+    background: transparent;
+  }
+  
+  .custom-navbar.scrolled {
+    background-color: var(--secondary-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .brand-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color) !important;
+  }
+  
+  .nav-link {
+    font-weight: 600;
+    margin: 0 1rem;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  /* Intro Styles */
+  .intro {
+    height: calc(100vh - 76px);
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.2;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  .watch-button {
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .watch-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(229, 9, 20, 0.3);
+  }
+  
+  /* Movie Sections */
+  .trending-section,
+  .superhero-section {
+    padding: 5rem 0;
+    min-height: 100vh;
+    background-attachment: fixed;
+  }
+  
+  .trending-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url(../assets/images/BG/BackGround_2.png);
+    background-size: cover;
+  }
+  
+  .superhero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url(../assets/images/BG/BackGround_3.png);
+    background-size: cover;
+  }
+  
+  /* Movie Card Styles */
+  .movie-card {
+    background-color: transparent;
+    border: none;
+    margin-bottom: 2rem;
+  }
+  
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .movie-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlay-color);
+    opacity: 0;
     display: flex;
     justify-content: center;
-    align-items: end;
-}
-
-.title{
-    font-size: 3rem;
-    font-weight: 800;
-    line-height: 1;
-    text-shadow: 2px 2px black;
-    letter-spacing: 4px;
-}
-
-.trending{
-    height: auto;
-    background: url(../assets/images/BG/BackGround_2.png);
-    background-size: cover;
-}
-
-.Superhero{
-    height: auto;
-    background: url(../assets/images/BG/BackGround_3.png);
-    background-size: cover;
-}
-
-.movieWraper{
-}
-
-.movieImage{
-    height : auto;
-    background-color: black;
-    margin : 2px;
-    padding : 2px;
-}
-
-.Images{
-    height: 500px;
-}
+    align-items: center;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .image-container:hover .movie-image {
+    transform: scale(1.1);
+  }
+  
+  .play-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .play-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+    background-color: rgba(20, 20, 20, 0.8);
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .movie-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+  }
+  
+  .movie-description {
+    color: #cccccc;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .last-updated {
+    color: #888888;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.5rem;
+    }
+    
+    .movie-image {
+      height: 300px;
+    }
+  }
