@@ -1,5 +1,6 @@
 import { Card, Image } from 'react-bootstrap';
 import { motion } from 'framer-motion';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const MovieCard = ({ image, title, description, lastUpdated }) => {
     return (
@@ -15,7 +16,7 @@ const MovieCard = ({ image, title, description, lastUpdated }) => {
                             whileHover={{ scale: 1.1 }}
                             className="btn btn-danger rounded-circle play-button"
                         >
-                            ▶
+                            <i className="fas fa-play"></i>
                         </motion.button>
                     </div>
                 </div>

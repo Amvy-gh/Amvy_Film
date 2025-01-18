@@ -39,23 +39,6 @@ body {
     margin-bottom: 1rem;
 }
 
-.watch-button {
-    padding: 1rem 2.5rem;
-    font-size: 1.2rem;
-    font-weight: 600;
-    border-radius: 30px;
-    background-color: var(--primary-color);
-    border: none;
-    color: var(--text-color);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-}
-
-.watch-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(229, 9, 20, 0.3);
-}
-
 /* Navbar Styles */
 .custom-navbar {
     position: fixed;
@@ -138,7 +121,6 @@ body {
 }
 
 .image-container {
-    background-color: red;
     position: relative;
     overflow: hidden;
     border-radius: 6px 6px 0 0;
@@ -146,7 +128,7 @@ body {
 
 .movie-image {
     width: 100%;
-    height: 400px;
+    height: 650px;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
@@ -177,8 +159,31 @@ body {
     width: 70px;
     height: 70px;
     font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #e50914;
+    border: none;
+    border-radius: 50%;
     transition: all 0.3s ease;
     box-shadow: 0px 4px 10px rgba(229, 9, 20, 0.4);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.play-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0%;
+    height: 0%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease, height 0.4s ease;
 }
 
 .play-button:hover {
@@ -186,6 +191,20 @@ body {
     box-shadow: 0px 6px 15px rgba(229, 9, 20, 0.6);
 }
 
+.play-button:hover::before {
+    width: 180%;
+    height: 180%;
+}
+
+.play-button:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px 2px rgba(229, 9, 20, 0.8);
+}
+
+.play-button i {
+    z-index: 1;
+    position: relative;
+}
 
 .card-content {
     padding: 1.5rem;
