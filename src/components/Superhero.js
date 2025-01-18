@@ -11,37 +11,37 @@ const superheroData = [
     {
         image: hero_1,
         title: "ANT-MAN",
-        description: "Hero that known for their incredible strength and bravery.",
+        description: "A hero with the ability to shrink in scale but increase in strength, using advanced technology.",
         lastUpdated: "Last updated 3 mins ago"
     },
     {
         image: hero_2,
         title: "SPIDER-MAN",
-        description: "Hero famous for their agility and quick thinking in the most challenging situations.",
+        description: "A young hero with spider-like abilities, known for swinging through cities and quick wit.",
         lastUpdated: "Last updated 5 mins ago"
     },
     {
         image: hero_3,
         title: "THE DARK KNIGHT",
-        description: "Hero has unmatched intelligence and futuristic gadgets.",
+        description: "A vigilante who uses his intellect, wealth, and cutting-edge gadgets to fight crime in Gotham.",
         lastUpdated: "Last updated 7 mins ago"
     },
     {
         image: hero_4,
         title: "CAPTAIN AMERICA",
-        description: "Hero is a master strategist and fearless leader.",
+        description: "A super-soldier with a strong sense of justice and an iconic vibranium shield.",
         lastUpdated: "Last updated 10 mins ago"
     },
     {
         image: hero_5,
         title: "IRON-MAN",
-        description: "Hero possesses extraordinary speed and endurance.",
+        description: "A genius inventor and billionaire who fights crime in a high-tech armored suit.",
         lastUpdated: "Last updated 15 mins ago"
     },
     {
         image: hero_6,
         title: "THOR",
-        description: "Hero is a master of stealth and martial arts.",
+        description: "The god of thunder wielding the enchanted hammer Mjölnir, protecting realms from cosmic threats.",
         lastUpdated: "Last updated 20 mins ago"
     }
 ];

@@ -8,12 +8,12 @@ const Intro = () => {
     const [showMovieList, setShowMovieList] = useState(false);
 
     const movieList = [
-        { title: "INCEPTION", category: "Trending", year: "2010" },
-        { title: "INTERSTELLAR", category: "Trending", year: "2014" },
-        { title: "THE MATRIX", category: "Trending", year: "1999" },
-        { title: "BLADE RUNNER 2049", category: "Trending", year: "2017" },
-        { title: "DUNE", category: "Trending", year: "2021" },
-        { title: "ARRIVAL", category: "Trending", year: "2016" },
+        { title: "GUARDIANS OF THE GALAXY VOL. 2", category: "Trending", year: "2017" },
+        { title: "AVENGERS: ENDGAME", category: "Trending", year: "2019" },
+        { title: "AVENGERS: INFINITY WAR", category: "Trending", year: "2018" },
+        { title: "AVENGERS: AGE OF ULTRON", category: "Trending", year: "2015" },
+        { title: "GUARDIANS OF THE GALAXY", category: "Trending", year: "2014" },
+        { title: "VENOM: THE LAST DANCE", category: "Trending", year: "2021" },
         { title: "ANT-MAN", category: "Superhero", year: "2015" },
         { title: "SPIDER-MAN", category: "Superhero", year: "2021" },
         { title: "THE DARK KNIGHT", category: "Superhero", year: "2008" },
@@ -21,6 +21,7 @@ const Intro = () => {
         { title: "IRON-MAN", category: "Superhero", year: "2008" },
         { title: "THOR", category: "Superhero", year: "2011" }
     ];
+    
 
     return (
         <div className="intro">

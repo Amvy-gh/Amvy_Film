@@ -11,7 +11,7 @@ function App() {
     document.title = "Amvy Films - Watch Free Movies";
   }, []);
 
-  return (
+  return (  
     <div className="app-container">
       <section className="hero-section">
         <MyNavbar />
