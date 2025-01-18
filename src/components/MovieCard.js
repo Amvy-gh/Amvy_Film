@@ -20,10 +20,10 @@ const MovieCard = ({ image, title, description, lastUpdated }) => {
                         </motion.button>
                     </div>
                 </div>
-                <div className="card-content bg-dark text-white p-3">
+                <div className="card-content bg-dark text-white">
                     <Card.Title className="text-center fw-bold">{title}</Card.Title>
                     <Card.Text className="text-start mt-4">{description}</Card.Text>
-                    <Card.Text className="text-start text-white small mt-5">{lastUpdated}</Card.Text>
+                    <Card.Text className="text-start last-updated">{lastUpdated}</Card.Text>
                 </div>
             </Card>
         </motion.div>

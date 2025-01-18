@@ -71,7 +71,7 @@ const MovieList = ({ show, onClose, movieList }) => {
                             </div>
                         </div>
                     </Col>
-                </Row>
+                </Row>  
             </Modal.Body>
         </Modal>
     );

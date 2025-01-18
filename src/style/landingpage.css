@@ -134,15 +134,21 @@ body {
 /* Movie Cards */
 .movie-card {
     background-color: transparent;
-    border: none;
+    border: 3px solid #ffffff !important;
+    border-radius: 5px !important;
     margin-bottom: 2rem;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+    transform: scale(1.01);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .image-container {
+    border-radius: 4px 4px 0 0;
     position: relative;
     overflow: hidden;
-    border-radius: 6px 6px 0 0;
 }
 
 .movie-image {
@@ -167,7 +173,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.5s ease;
 }
 
 .image-container:hover .overlay {
@@ -226,16 +232,8 @@ body {
 }
 
 .card-content {
-    padding: 1.5rem;
-    background-color: rgba(20, 20, 20, 0.8);
-    border-radius: 0 0 6px 6px;
-}
-
-.card-title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--text-color);
-    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 0 0 4px 4px;
 }
 
 .card-text {
@@ -245,9 +243,9 @@ body {
 }
 
 .last-updated {
-    color: #888888;
+    color: #b3b3b3;
     font-size: 0.9rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 /* Responsive Styles */
